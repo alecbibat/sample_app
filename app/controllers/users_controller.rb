@@ -31,6 +31,7 @@ class UsersController < ApplicationController
   	User.find(params[:id]) .destroy
   	flash[:success] = "User deleted"
   	reedirect_to users_url
+  end
 
 def create
 	@user = User.new(user_params)
